@@ -87,18 +87,18 @@ A team with many enthusiastic people quickly formed around the server, together 
 
 
 
-### Built With
+### Milestones
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Here is a list of all the Milestones that ChickenSky.de has achieved:
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
