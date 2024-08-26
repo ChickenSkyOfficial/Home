@@ -34,18 +34,15 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Chickensky</h3>
+  <h3 align="center">ChickenSky</h3>
 
   <p align="center">
     The Ultimate Minecraft Server experience
     <br />
     <br />
     <br />
-    <a href="https://github.com/jobrain1/Chickensky/blob/main/README">View Read Me</a>
     ·
     <a href="https://discord.gg/WQbBT2PN8Q">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Explore</a>
   </p>
 </div>
 
