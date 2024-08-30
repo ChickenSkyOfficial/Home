@@ -24,13 +24,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.webp" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">ChickenSky</h3>
 
   <p align="center">
-    The Ultimate Minecraft Server experience
+    DIe Ultimative Minecraft Server Erfahrung
     <br />
     <br />
     <br />
@@ -44,16 +44,16 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Inhaltsverzeichnis</summary>
   <ol>
     <li>
       <a href="#about-the-project">Über das Projekt</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">/</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">ServerTeam</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -79,9 +79,9 @@ Schnell bildete sich ein Team mit vielen begeisterten Leuten rund um den Server,
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Milestones
+### Meilensteine
 
-Here is a list of all the Milestones that ChickenSky.de has achieved:
+Hier ist eine Liste aller Meilensteine, die ChickenSky.de erreicht hat:
 
 * 
 * 
@@ -92,23 +92,45 @@ Here is a list of all the Milestones that ChickenSky.de has achieved:
 * 
 * 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Zurück zum Anfang</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Unser Server Team
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Hier ist eine Liste von unserem ServerTeam:
 
-### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+**OWNER:** Space_ChickenFLY
+
+**Admin:** ech0Schokolade, 19hina83
+
+**SrSocials:** HaiX5
+
+**Socials:** MrGaming2000, Jo_Brain
+
+**JrSocials:** GwalexGaming
+
+**SrDeveloper:** ***///***
+
+**Developer:** ***///***
+
+**JrDeveloper:** ***///***
+
+**SrModerator:** ***///***
+
+**Moderator:** MrGaming2000
+
+**JrModerator:** ***///***
+
+**SrBuilder:** NoRiskNooFun, Gamermundi
+
+**Builder:** ***///***
+
+**JrBuilder:** ***///***
+
+Letztes Update: 30.8.24
 
 ### Installation
 
