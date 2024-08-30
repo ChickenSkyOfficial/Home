@@ -30,7 +30,7 @@
   <h3 align="center">ChickenSky</h3>
 
   <p align="center">
-    The Ultimate Minecraft Server experience
+    DIe Ultimative Minecraft Server Erfahrung
     <br />
     <br />
     <br />
@@ -44,7 +44,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Inhaltsverzeichnis</summary>
   <ol>
     <li>
       <a href="#about-the-project">Über das Projekt</a>
