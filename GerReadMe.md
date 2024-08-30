@@ -79,9 +79,9 @@ Schnell bildete sich ein Team mit vielen begeisterten Leuten rund um den Server,
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Milestones
+### Meilensteine
 
-Here is a list of all the Milestones that ChickenSky.de has achieved:
+Hier ist eine Liste aller Meilensteine, die ChickenSky.de erreicht hat:
 
 * 
 * 
@@ -92,23 +92,45 @@ Here is a list of all the Milestones that ChickenSky.de has achieved:
 * 
 * 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Zurück zum Anfang</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Unser Server Team
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Hier ist eine Liste von unserem ServerTeam:
+----------------------------------------------------
+OWNER: Space_ChickenFLY
+----------------------------------------------------
+Admin: ech0Schokolade, 19hina83
+----------------------------------------------------
+SrSocials: HaiX5
+----------------------------------------------------
+Socials: MrGaming2000, Jo_Brain
+----------------------------------------------------
+JrSocials: GwalexGaming
+----------------------------------------------------
+SrDeveloper: ///
+----------------------------------------------------
+Developer: ///
+----------------------------------------------------
+JrDeveloper: ///
+----------------------------------------------------
+SrModerator: ///
+----------------------------------------------------
+Moderator: MrGaming2000
+----------------------------------------------------
+JrModerator: ///
+----------------------------------------------------
+SrBuilder: NoRiskNooFun, Gamermundi
+----------------------------------------------------
+Builder: ///
+----------------------------------------------------
+JrBuilder ///
+----------------------------------------------------
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Letztes Update: 30.8.24
 
 ### Installation
 
