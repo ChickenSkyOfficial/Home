@@ -34,7 +34,7 @@
     <br />
     <br />
     <br />
-    <a href="https://discord.gg/WQbBT2PN8Q">German Translation</a>
+    <a href="https://github.com/ChickenSkyOfficial/Home/blob/main/German%20ReadMe">German Translation</a>
     ·
     <a href="https://discord.gg/WQbBT2PN8Q">Report Bug</a>
   </p>
