@@ -49,11 +49,11 @@
     <li>
       <a href="#about-the-project">Über das Projekt</a>
       <ul>
-        <li><a href="#built-with">ServerTeam</a></li>
+        <li><a href="#built-with">/</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">ServerTeam</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
