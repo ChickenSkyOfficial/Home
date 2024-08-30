@@ -34,7 +34,7 @@
     <br />
     <br />
     <br />
-    <a href="https://discord.gg/WQbBT2PN8Q">Englische Übersetzung</a>
+    <a href="https://github.com/ChickenSkyOfficial/Home/blob/main/README.md">Englische Übersetzung</a>
     ·
     <a href="https://discord.gg/WQbBT2PN8Q">Fehler Melden</a>
   </p>
