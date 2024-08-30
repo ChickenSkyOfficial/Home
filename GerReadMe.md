@@ -102,34 +102,33 @@ Hier ist eine Liste aller Meilensteine, die ChickenSky.de erreicht hat:
 Hier ist eine Liste von unserem ServerTeam:
 
 
-OWNER: Space_ChickenFLY
+**OWNER:** Space_ChickenFLY
 
-Admin: ech0Schokolade, 19hina83
+**Admin:** ech0Schokolade, 19hina83
 
-SrSocials: HaiX5
+**SrSocials:** HaiX5
 
-Socials: MrGaming2000, Jo_Brain
+**Socials:** MrGaming2000, Jo_Brain
 
-JrSocials: GwalexGaming
+**JrSocials:** GwalexGaming
 
-SrDeveloper: ///
+**SrDeveloper:** ***///***
 
-Developer: ///
+**Developer:** ***///***
 
-JrDeveloper: ///
+**JrDeveloper:** ***///***
 
-SrModerator: ///
+**SrModerator:** ***///***
 
-Moderator: MrGaming2000
+**Moderator:** MrGaming2000
 
-JrModerator: ///
+**JrModerator:** ***///***
 
-SrBuilder: NoRiskNooFun, Gamermundi
+**SrBuilder:** NoRiskNooFun, Gamermundi
 
-Builder: ///
+**Builder:** ***///***
 
-JrBuilder: ///
-
+**JrBuilder:** ***///***
 
 Letztes Update: 30.8.24
 
