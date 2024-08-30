@@ -49,7 +49,7 @@
     <li>
       <a href="#about-the-project">Über das Projekt</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">ServerTeam</a></li>
       </ul>
     </li>
     <li>
@@ -100,6 +100,7 @@ Hier ist eine Liste aller Meilensteine, die ChickenSky.de erreicht hat:
 ## Unser Server Team
 
 Hier ist eine Liste von unserem ServerTeam:
+
 
 OWNER: Space_ChickenFLY
 
