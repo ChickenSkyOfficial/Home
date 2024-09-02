@@ -14,7 +14,7 @@ const Shop = () => {
   };
 
   return (
-    <div id="shop" className="relative min-h-screen bg-[#121212] text-white">
+    <div id="store" className="relative min-h-screen bg-[#121212] text-white">
       {showPasswordModal && (
         <PasswordModal
           isVisible={showPasswordModal}
@@ -34,30 +34,30 @@ const Shop = () => {
       ) : (
         <div className="pt-16"> {/* Abstand oben, damit es nach dem Modal angezeigt wird */}
           <header className="py-8 text-center">
-            <h1 className="mb-6 text-4xl font-bold text-green-400">Shop</h1>
+            <h1 className="mb-6 text-4xl font-bold text-white">Store</h1>
             <p className="mb-12 text-lg text-gray-300">
-              Discover the best products tailored to your needs.
+              Get Cool Cosmetics and Accessories
             </p>
           </header>
           <main className="max-w-4xl py-10 mx-auto">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               <ProductCard 
-                name="Product 1" 
-                description="High-quality product" 
-                price="$20" 
-                imageUrl="https://placehold.jp/150x150.png" 
+                name="C Bucks" 
+                description="100 C Bucks" 
+                price="2,99€" 
+                imageUrl="https://i.postimg.cc/0Q6j7fh3/3.png" 
               />
               <ProductCard 
                 name="Product 2" 
                 description="Another great product" 
                 price="$30" 
-                imageUrl="https://placehold.jp/150x150.png" 
+                imageUrl="https://placehold.jp/0011ff/ffffff/150x150.png" 
               />
               <ProductCard 
                 name="Product 3" 
                 description="You will love this" 
                 price="$40" 
-                imageUrl="https://placehold.jp/150x150.png" 
+                imageUrl="https://placehold.jp/0011ff/ffffff/150x150.png" 
               />
             </div>
           </main>
