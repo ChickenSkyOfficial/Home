@@ -4,6 +4,7 @@ import AboutSection from "./components/AboutSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
+import Shop from "./components/shop";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection />
         <AchievementsSection />
         <AboutSection />
+        <Shop />
         <EmailSection />
       </div>
       <Footer />
