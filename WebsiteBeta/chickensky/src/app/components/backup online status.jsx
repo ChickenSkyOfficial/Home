@@ -4,12 +4,14 @@ import dynamic from "next/dynamic";
 
 const AnimatedNumbers = dynamic(
   () => import("react-animated-numbers"),
-  { ssr: false }
+  { ssr: false   
+ }
 );
 
 const achievementsList = [
   {
-    metric: "Players",
+    metric:   
+ "Players",
     value: "50", // Initialer Wert, wird durch den State ersetzt
     prefix: "",
     postfix: "",
@@ -34,32 +36,40 @@ const achievementsList = [
   },
 ];
 
-// Funktion, um den aktuellen Playercount von der API abzurufen
-const fetchPlayerCount = async () => {
+// Funktion, um den aktuellen Playercount und Serverstatus von der API abzurufen
+const fetchServerStatus = async () => {
   try {
     const response = await fetch('https://api.mcsrvstat.us/2/chickensky.de');
     const data = await response.json();
-    return data.players.online; // Gibt die aktuelle Anzahl der Spieler zurück
+    return {
+      playerCount: data.players.online,
+      online: data.online,
+    };
   } catch (error) {
-    console.error("Fehler beim Abrufen des Playercounts:", error);
-    return 0;
+    console.error("Fehler beim Abrufen des Serverstatus:", error);
+    return {
+      playerCount: 0,
+      online: false,
+    };
   }
 };
 
 const AchievementsSection = () => {
   const [playerCount, setPlayerCount] = useState(0);
+  const [isOnline, setIsOnline] = useState(false);
 
   useEffect(() => {
-    const updatePlayerCount = async () => {
-      const count = await fetchPlayerCount();
-      setPlayerCount(count);
+    const updateServerStatus = async () => {
+      const { playerCount, online } = await fetchServerStatus();
+      setPlayerCount(playerCount);
+      setIsOnline(online);
     };
 
     // Initiale Abfrage
-    updatePlayerCount();
+    updateServerStatus();
 
     // Alle 5 Sekunden aktualisieren
-    const interval = setInterval(updatePlayerCount, 5000);
+    const interval = setInterval(updateServerStatus, 5000);
 
     // Aufräumen, wenn die Komponente unmontiert wird
     return () => clearInterval(interval);
@@ -67,7 +77,23 @@ const AchievementsSection = () => {
 
   return (
     <div className="px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
-      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
+      <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center   
+ justify-between">   
+
+        {/* Status Box */}
+        <div className="flex items-center mb-4 sm:mb-0 sm:w-1/4">
+          <div
+            className={`flex items-center ${isOnline ? "text-green-500" : "text-red-500"}`}
+          >
+            <div
+              className={`w-3 h-3 rounded-full ${isOnline ? "bg-green-500" : "bg-red-500"}`}
+              style={{ marginRight: 0 }} // Remove margin for spacing adjustment
+            />
+            <span className="ml-2 text-lg font-bold">  {/* Added marginLeft for spacing */}
+              {isOnline ? "Online" : "Offline"}
+            </span>
+          </div>
+        </div>
         {achievementsList.map((achievement, index) => {
           // Wenn das Achievement "Players" ist, den aktuellen Playercount anzeigen
           if (achievement.metric === "Players") {
