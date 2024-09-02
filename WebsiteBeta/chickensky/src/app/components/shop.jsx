@@ -45,19 +45,19 @@ const Shop = () => {
                 name="Product 1" 
                 description="High-quality product" 
                 price="$20" 
-                imageUrl="/images/product1.jpg" 
+                imageUrl="https://placehold.jp/150x150.png" 
               />
               <ProductCard 
                 name="Product 2" 
                 description="Another great product" 
                 price="$30" 
-                imageUrl="/images/product2.jpg" 
+                imageUrl="https://placehold.jp/150x150.png" 
               />
               <ProductCard 
                 name="Product 3" 
                 description="You will love this" 
                 price="$40" 
-                imageUrl="/images/product3.jpg" 
+                imageUrl="https://placehold.jp/150x150.png" 
               />
             </div>
           </main>
