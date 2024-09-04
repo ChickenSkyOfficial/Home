@@ -14,7 +14,7 @@ const Shop = () => {
   };
 
   return (
-    <div id="store" className="relative min-h-screen bg-[#121212] text-white">
+    <div id="shop" className="relative min-h-screen bg-[#121212] text-white">
       {showPasswordModal && (
         <PasswordModal
           isVisible={showPasswordModal}
@@ -34,30 +34,33 @@ const Shop = () => {
       ) : (
         <div className="pt-16"> {/* Abstand oben, damit es nach dem Modal angezeigt wird */}
           <header className="py-8 text-center">
-            <h1 className="mb-6 text-4xl font-bold text-white">Store</h1>
+            <h1 className="mb-6 text-4xl font-bold text-green-400">Shop</h1>
             <p className="mb-12 text-lg text-gray-300">
-              Get Cool Cosmetics and Accessories
+              Discover the best products tailored to your needs.
             </p>
           </header>
           <main className="max-w-4xl py-10 mx-auto">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               <ProductCard 
-                name="C Bucks" 
+                name="Mini Pack" 
                 description="100 C Bucks" 
                 price="2,99€" 
-                imageUrl="https://i.postimg.cc/0Q6j7fh3/3.png" 
+                imageUrl="https://i.postimg.cc/t4RQVgxn/Design-ohne-Titel-2.png" 
+                productUrl="https://buy.stripe.com/test_fZebM52QWbSz2yI7sw" // Ersetze dies mit der tatsächlichen URL
               />
               <ProductCard 
-                name="Product 2" 
-                description="Another great product" 
-                price="$30" 
-                imageUrl="https://placehold.jp/0011ff/ffffff/150x150.png" 
+                name="Medium Pack" 
+                description="500 C Bucks" 
+                price="12,99€" 
+                imageUrl="/images/product2.jpg" 
+                productUrl="https://buy.stripe.com/test_fZedUdajof4L3CM28d" // Ersetze dies mit der tatsächlichen URL
               />
               <ProductCard 
-                name="Product 3" 
-                description="You will love this" 
-                price="$40" 
-                imageUrl="https://placehold.jp/0011ff/ffffff/150x150.png" 
+                name="Large Pack" 
+                description="1000 C Bucks" 
+                price="23,99€" 
+                imageUrl="/images/product3.jpg" 
+                productUrl="https://buy.stripe.com/test_3cs17r77c9Kr0qA6ou" // Ersetze dies mit der tatsächlichen URL
               />
             </div>
           </main>
