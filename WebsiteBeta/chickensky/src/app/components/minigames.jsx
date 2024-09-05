@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 // Definiere die Box-Daten hier
 const boxData = [
   { id: 1, name: 'Box 1', image: 'https://i.postimg.cc/W4wjZXgs/Design-ohne-Titel-7.png', clickText: 'Bed Wars FFA ist ein Multiplayer-Spiel, in dem jeder gegen jeden kämpft. Spieler versuchen, die Betten ihrer Gegner zu zerstören, um deren Respawn zu verhindern. Ziel ist es, als letzter Überlebender übrig zu bleiben.' },
-  { id: 2, name: 'Box 2', image: '/images/image2.jpg', clickText: 'Box 2 wurde geklickt!' },
-  { id: 3, name: 'Box 3', image: '/images/image3.jpg', clickText: 'Box 3 wurde geklickt!' },
+  { id: 2, name: 'Box 2', image: 'https://i.postimg.cc/g21G28GK/Design-ohne-Titel-8.png', clickText: 'SkyWars FFA ist ein Minecraft-Spielmodus, bei dem Spieler auf schwebenden Inseln starten und gegeneinander kämpfen, bis nur einer übrig bleibt. Es gibt keine Teams – jeder spielt für sich.' },
+  { id: 3, name: 'Box 3', image: 'https://i.postimg.cc/Y9RcYWBZ/Design-ohne-Titel-9.png', clickText: 'CubWars ist ein Minecraft-Modus, bei dem Teams gegnerische Basen zerstören und ihre eigene verteidigen müssen.' },
 ];
 
 const InteractiveBoxes = () => {

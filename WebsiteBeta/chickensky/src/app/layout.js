@@ -6,12 +6,14 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Chickensky',
   description: 'The Ultimate Minecraft Server',
+  favicon: '/favicon.ico',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+        <link rel="icon" type="image/png" href="/icon.png" />
     </html>
   )
 }

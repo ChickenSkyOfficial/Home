@@ -108,16 +108,25 @@ const AchievementsSection = () => {
 
   }, []); // Dependency-Array leer lassen, damit es nur einmal beim Laden ausgeführt wird
 
-  // Bestimme die Farbe des Statuspunkts
+  // Bestimme die Farbe des Statuspunkts und der Animation basierend auf dem Serverstatus
   const statusColor = serverStatus === 'online' ? 'bg-green-500' :
                       serverStatus === 'offline' ? 'bg-red-500' :
                       'bg-orange-500';
+
+  const waveColor = serverStatus === 'online' ? 'bg-green-400' :
+                    serverStatus === 'offline' ? 'bg-red-400' :
+                    'bg-orange-400';
+
+  // Statuspunkt mit Wellenanimation für alle Status
+  const statusClass = `relative flex items-center justify-center w-4 h-4 rounded-full ${statusColor}`;
 
   return (
     <div className="px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
       <div className="flex justify-center mb-8">
         <div className="flex items-center space-x-3">
-          <div className={`w-4 h-4 rounded-full ${statusColor}`} />
+          <div className={statusClass}>
+            <span className={`absolute inline-flex h-full w-full rounded-full ${waveColor} opacity-79 animate-ping`} />
+          </div>
           <p className="text-lg font-bold text-white">
             {serverStatus === 'online' ? 'Server Online' :
              serverStatus === 'offline' ? 'Server Offline' :

@@ -14,7 +14,7 @@ const Shop = () => {
   };
 
   return (
-    <div id="shop" className="relative min-h-screen bg-[#121212] text-white">
+    <div id="store" className="relative min-h-screen bg-[#121212] text-white">
       {showPasswordModal && (
         <PasswordModal
           isVisible={showPasswordModal}
@@ -34,7 +34,7 @@ const Shop = () => {
       ) : (
         <div className="pt-16"> {/* Abstand oben, damit es nach dem Modal angezeigt wird */}
           <header className="py-8 text-center">
-            <h1 className="mb-6 text-4xl font-bold text-green-400">Store</h1>
+            <h1 className="mb-6 text-4xl font-bold text-white">Store</h1>
             <p className="mb-12 text-lg text-gray-300">
               Discover the best products tailored to your needs.
             </p>
