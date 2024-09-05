@@ -7,7 +7,7 @@ import AboutSection from "./components/AboutSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
-import Shop from "./components/Shop";
+import Shop from "./components/Shop.jsx";
 import InteractiveBoxes from "./components/minigames";
 import MaintenanceOverlay from "./components/MaintenanceOverlay"; // Importiere die Wartungs-Overlay-Komponente
 
