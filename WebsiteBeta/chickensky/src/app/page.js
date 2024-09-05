@@ -5,6 +5,7 @@ import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
 import Shop from "./components/shop";
+import InteractiveBoxes from "./components/minigames";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <AchievementsSection />
         <AboutSection />
+        <InteractiveBoxes />
         <Shop />
         <EmailSection />
       </div>

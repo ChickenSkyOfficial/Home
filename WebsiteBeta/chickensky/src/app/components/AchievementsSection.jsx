@@ -9,13 +9,13 @@ const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
 const achievementsList = [
   {
     metric: "Players",
-    value: "50", // Initialer Wert, wird durch den State ersetzt
+    value: "50",
     prefix: "",
     postfix: "",
   },
   {
     metric: "Discord Member",
-    value: "124", // Initialer Wert, wird durch den State ersetzt
+    value: "124",
     prefix: "",
     postfix: "",
   },
@@ -33,12 +33,15 @@ const achievementsList = [
   },
 ];
 
+// Status-Konstante
+const MAINTENANCE_MODE = false; // Ändere dies auf `true`, um in den Wartungsmodus zu wechseln
+
 // Funktion, um den aktuellen Playercount von der API abzurufen
 const fetchPlayerCount = async () => {
   try {
     const response = await fetch('https://api.mcsrvstat.us/2/chickensky.de');
     const data = await response.json();
-    return data.players.online; // Gibt die aktuelle Anzahl der Spieler zurück
+    return data.players.online;
   } catch (error) {
     console.error("Fehler beim Abrufen des Playercounts:", error);
     return 0;
@@ -48,7 +51,7 @@ const fetchPlayerCount = async () => {
 // Funktion, um die Discord-Mitgliederanzahl von der eigenen API abzurufen
 const fetchDiscordMemberCount = async () => {
   try {
-    const response = await fetch('/api/memberCount'); // Anfrage an die eigene API-Route
+    const response = await fetch('/api/memberCount');
     const data = await response.json();
 
     if (!response.ok) {
@@ -62,9 +65,25 @@ const fetchDiscordMemberCount = async () => {
   }
 };
 
+// Funktion, um den Server-Status abzurufen
+const fetchServerStatus = async () => {
+  if (MAINTENANCE_MODE) {
+    return 'maintenance';
+  }
+  try {
+    const response = await fetch('https://api.mcsrvstat.us/2/chickensky.de');
+    const data = await response.json();
+    return data.online ? 'online' : 'offline';
+  } catch (error) {
+    console.error("Fehler beim Abrufen des Serverstatus:", error);
+    return 'offline';
+  }
+};
+
 const AchievementsSection = () => {
   const [playerCount, setPlayerCount] = useState(0);
   const [discordMemberCount, setDiscordMemberCount] = useState(0);
+  const [serverStatus, setServerStatus] = useState('maintenance');
 
   useEffect(() => {
     const updatePlayerCount = async () => {
@@ -77,29 +96,41 @@ const AchievementsSection = () => {
       setDiscordMemberCount(count);
     };
 
+    const updateServerStatus = async () => {
+      const status = await fetchServerStatus();
+      setServerStatus(status);
+    };
+
     // Initiale Abfragen
     updatePlayerCount();
     updateDiscordMemberCount();
+    updateServerStatus();
 
-    // Aktualisiere alle 5 Sekunden
-    const interval = setInterval(() => {
-      updatePlayerCount();
-      updateDiscordMemberCount();
-    }, 5000);
+  }, []); // Dependency-Array leer lassen, damit es nur einmal beim Laden ausgeführt wird
 
-    // Aufräumen, wenn die Komponente unmontiert wird
-    return () => clearInterval(interval);
-  }, []);
+  // Bestimme die Farbe des Statuspunkts
+  const statusColor = serverStatus === 'online' ? 'bg-green-500' :
+                      serverStatus === 'offline' ? 'bg-red-500' :
+                      'bg-orange-500';
 
   return (
     <div className="px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="flex justify-center mb-8">
+        <div className="flex items-center space-x-3">
+          <div className={`w-4 h-4 rounded-full ${statusColor}`} />
+          <p className="text-lg font-bold text-white">
+            {serverStatus === 'online' ? 'Server Online' :
+             serverStatus === 'offline' ? 'Server Offline' :
+             'Wartungen'}
+          </p>
+        </div>
+      </div>
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
-          // Wenn das Achievement "Players" ist, den aktuellen Playercount anzeigen
           if (achievement.metric === "Players") {
             return (
               <div
-                key={`players-${playerCount}`} // Dynamischer Key für AnimatedNumbers
+                key={`players-${playerCount}`}
                 className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
               >
                 <h2 className="flex flex-row text-4xl font-bold text-white">
@@ -122,11 +153,10 @@ const AchievementsSection = () => {
             );
           }
 
-          // Wenn das Achievement "Discord Member" ist, den aktuellen Discord Member Count anzeigen
           if (achievement.metric === "Discord Member") {
             return (
               <div
-                key={`discord-member-${discordMemberCount}`} // Dynamischer Key für AnimatedNumbers
+                key={`discord-member-${discordMemberCount}`}
                 className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
               >
                 <h2 className="flex flex-row text-4xl font-bold text-white">
@@ -149,7 +179,6 @@ const AchievementsSection = () => {
             );
           }
 
-          // Andere Achievements
           return (
             <div
               key={index}

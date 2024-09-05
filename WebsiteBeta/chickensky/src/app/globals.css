@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
